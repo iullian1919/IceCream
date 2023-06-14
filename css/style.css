@@ -1,0 +1,164 @@
+/* Manufacturing */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff5f6;
+}
+
+.container .manufacturing-background {
+  background: url(../images/sectionbg1.jpg);
+
+  height: 521px;
+}
+
+.manufacturing-center {
+  display: flex;
+  padding: 0px 99px 20px 16px;
+}
+.manufacturing-h3 {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  padding-top: 60px;
+}
+
+.manufacturing-h2 {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 66px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #d41443;
+  padding-top: 16px;
+}
+
+.manufacturing-image {
+  top: 0px;
+  left: 20px;
+}
+
+.manufacturing-text {
+  display: block;
+  padding-left: 99px;
+}
+
+.manufacturing-text-top {
+  font-family: "DM Sans";
+  font-style: normal;
+  width: 400px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+  color: #000000;
+  padding-top: 80px;
+  padding-right: 0;
+}
+
+.manufacturing-text-bottom {
+  font-family: "DM Sans";
+  font-style: normal;
+  max-width: 401px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 194%;
+  letter-spacing: 0.04em;
+  color: #907e82;
+  padding-top: 32px;
+}
+
+.manufacturing-button {
+  cursor: pointer;
+  width: 176px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  color: #d41443;
+  position: relative;
+  top: 40px;
+}
+
+.manufacturing-icon {
+  position: absolute;
+}
+
+.manufacturing-text-final {
+  display: flex;
+}
+
+.manufacturing-text-milk {
+  display: block;
+  margin-left: 16px;
+}
+
+.manufacturing-text-apple {
+  margin-left: 115px;
+}
+.manufacturing-text-flavors {
+  margin-left: 80px;
+}
+
+.manufacturing-text-numbers {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 66px;
+  text-align: left;
+  letter-spacing: 0.04em;
+  color: #d41443;
+  padding-bottom: 16px;
+}
+
+.manufacturing-text-final-milk {
+  width: 288px;
+  height: 79px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.manufacturing-text-final-apple {
+  width: 317px;
+  height: 58px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.manufacturing-text-final-flavors {
+  width: 288px;
+  height: 82px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
