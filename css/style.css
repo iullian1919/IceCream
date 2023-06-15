@@ -1,3 +1,9 @@
+/* Margin reset */
+
+p {
+  margin: 0;
+}
+
 /* Manufacturing */
 
 .container {
@@ -6,17 +12,22 @@
   background: #fff5f6;
 }
 
-.container .manufacturing-background {
-  background: url(../images/sectionbg1.jpg);
-
-  height: 521px;
+.about-heading {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.manufacturing-center {
+.about-background {
+  background: url(../images/milk-background.png);
+  height: 521px;
+  border: none;
+}
+
+.about-center {
   display: flex;
   padding: 0px 99px 20px 16px;
 }
-.manufacturing-h3 {
+.about-label {
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
@@ -26,10 +37,11 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffa5ba;
-  padding-top: 60px;
+  margin-top: 0;
+  margin-left: 425px;
 }
 
-.manufacturing-h2 {
+.about-h2 {
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
@@ -39,20 +51,31 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #d41443;
-  padding-top: 16px;
+  margin-top: 16px;
+  margin-bottom: 0;
 }
 
-.manufacturing-image {
+.about-image {
   top: 0px;
   left: 20px;
 }
 
-.manufacturing-text {
+.about-imgage-efect {
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 500ms;
+}
+
+.about-imgage-efect:hover {
+  transform: rotate(180deg);
+}
+
+.about-text {
   display: block;
   padding-left: 99px;
 }
 
-.manufacturing-text-top {
+.about-text-top {
   font-family: "DM Sans";
   font-style: normal;
   width: 400px;
@@ -61,11 +84,11 @@
   line-height: 176%;
   letter-spacing: 0.04em;
   color: #000000;
-  padding-top: 80px;
+  padding-top: 60px;
   padding-right: 0;
 }
 
-.manufacturing-text-bottom {
+.about-text-bottom {
   font-family: "DM Sans";
   font-style: normal;
   max-width: 401px;
@@ -74,10 +97,10 @@
   line-height: 194%;
   letter-spacing: 0.04em;
   color: #907e82;
-  padding-top: 32px;
+  padding-top: 20px;
 }
 
-.manufacturing-button {
+.about-button {
   cursor: pointer;
   width: 176px;
   height: 44px;
@@ -89,33 +112,56 @@
   font-size: 16px;
   line-height: 21px;
   align-items: center;
-  text-align: center;
+  padding-left: 37px;
+  text-align: left;
   color: #d41443;
   position: relative;
-  top: 40px;
+  top: 10px;
 }
 
-.manufacturing-icon {
+#myBtn {
+  position: relative;
+}
+
+.about-icon {
   position: absolute;
+  padding-left: 13px;
 }
 
-.manufacturing-text-final {
+.about-hidden-text-button {
+  font-family: "DM Sans";
+  font-style: normal;
+  width: 400px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 194%;
+  letter-spacing: 0.04em;
+  color: #907e82;
+}
+
+/* Advantages */
+
+.advantages-text-final {
   display: flex;
 }
 
-.manufacturing-text-milk {
+.advantages-text-milk {
   display: block;
   margin-left: 16px;
+  margin-top: 40px;
+  padding-bottom: 182px;
 }
 
-.manufacturing-text-apple {
+.advantages-text-apple {
   margin-left: 115px;
+  margin-top: 40px;
 }
-.manufacturing-text-flavors {
+.advantages-text-flavors {
   margin-left: 80px;
+  margin-top: 40px;
 }
 
-.manufacturing-text-numbers {
+.advantages-text-numbers {
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
@@ -124,10 +170,29 @@
   text-align: left;
   letter-spacing: 0.04em;
   color: #d41443;
+  padding-top: 40px;
   padding-bottom: 16px;
 }
 
-.manufacturing-text-final-milk {
+.advantages-text-milk .icon::before {
+  content: url(../images/milk.png);
+  display: block;
+  padding: 40px 0px 40px 0px;
+}
+
+.advantages-text-apple .icon::before {
+  content: url(../images/apples.png);
+  display: block;
+  padding: 40px 0px 40px 0px;
+}
+
+.advantages-text-flavors .icon::before {
+  content: url(../images/heart.png);
+  display: block;
+  padding: 40px 0px 40px 0px;
+}
+
+.advantages-text-final-milk {
   width: 288px;
   height: 79px;
   font-family: "DM Sans";
@@ -139,7 +204,7 @@
   color: #000000;
 }
 
-.manufacturing-text-final-apple {
+.advantages-text-final-apple {
   width: 317px;
   height: 58px;
   font-family: "DM Sans";
@@ -151,7 +216,7 @@
   color: #000000;
 }
 
-.manufacturing-text-final-flavors {
+.advantages-text-final-flavors {
   width: 288px;
   height: 82px;
   font-family: "DM Sans";
@@ -161,4 +226,8 @@
   line-height: 176%;
   letter-spacing: 0.02em;
   color: #000000;
+}
+
+#more {
+  display: none;
 }
