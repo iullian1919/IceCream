@@ -1,18 +1,66 @@
-:root {
-}
-
 /* Margin reset */
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Margin reset for inline elements */
+a,
+b,
+button,
+br,
+img,
+span {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Margin reset for block elements */
+ul {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/*  Margin reset */
+h1,
+h2,
+h3,
+h4,
+ul,
 p {
   margin: 0;
 }
 
-img {
-  max-width: 100%;
-  display: block;
+ul {
+  list-style-type: none;
 }
 
-/* Manufacturing */
+/* MObile */
+
+/* About */
 
 .container {
   max-width: 1200px;
@@ -20,52 +68,58 @@ img {
   background: #fff5f6;
 }
 
-.about-heading {
+.about-titles {
+  display: flex;
+  flex-direction: column;
   padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.about-background {
-  background: url(../images/milk-background.png);
-  height: 521px;
-  border: none;
+  padding-bottom: 32px;
 }
 
 .about-center {
   display: flex;
-  padding: 0px 99px 20px 16px;
+  flex-direction: column;
 }
+
 .about-label {
+  display: flex;
+  justify-content: center;
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 34px;
+  font-size: 18px;
+  line-height: 21px;
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffa5ba;
   margin-top: 0;
-  margin-left: 425px;
 }
 
-.about-h2 {
+.about-title {
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
-  font-size: 58px;
-  line-height: 66px;
+  font-size: 34px;
+  line-height: 39px;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
   margin-top: 16px;
-  margin-bottom: 0;
+  margin-bottom: 32px;
 }
-
+/*
+.about-background {
+  background: url(../images/milk-background.png);
+  width: 280px;
+  height: 133px;
+  border: none;
+  position: absolute;
+}
+*/
 .about-image {
   top: 0px;
-  left: 20px;
+  width: 280px;
+  height: 279px;
 }
 
 .about-imgage-efect {
@@ -74,38 +128,38 @@ img {
   transition-delay: 500ms;
 }
 
-.about-imgage-efect:hover {
+.about-image-efect:hover {
   transform: rotate(180deg);
 }
 
 .about-text {
-  display: block;
-  padding-left: 99px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 80px;
 }
 
 .about-text-top {
   font-family: "DM Sans";
   font-style: normal;
-  width: 400px;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 176%;
+  font-size: 12px;
+  line-height: 162%;
   letter-spacing: 0.04em;
   color: #000000;
-  padding-top: 60px;
+  padding-top: 40px;
   padding-right: 0;
 }
 
 .about-text-bottom {
   font-family: "DM Sans";
   font-style: normal;
-  max-width: 401px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 194%;
+  font-size: 12px;
+  line-height: 162%;
   letter-spacing: 0.04em;
   color: #907e82;
-  padding-top: 20px;
+  padding-top: 18px;
 }
 
 .about-button {
@@ -117,18 +171,15 @@ img {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #d41443;
+  display: flex;
   align-items: center;
   padding-left: 37px;
-  text-align: left;
-  color: #d41443;
+  text-align: center;
   position: relative;
-  top: 10px;
-}
-
-#myBtn {
-  position: relative;
+  top: 20px;
 }
 
 .about-icon {
@@ -139,10 +190,9 @@ img {
 .about-hidden-text-button {
   font-family: "DM Sans";
   font-style: normal;
-  width: 400px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 194%;
+  font-size: 12px;
+  line-height: 162%;
   letter-spacing: 0.04em;
   color: #907e82;
 }
@@ -163,103 +213,360 @@ img {
   width: 1px;
 }
 
+.advantages-section {
+  display: flex;
+}
+
 .advantages-text-final {
   display: flex;
+  flex-direction: column;
+  margin-top: 40px;
 }
 
 .advantages-text-milk {
   display: block;
-  margin-left: 16px;
-  margin-top: 40px;
-  padding-bottom: 182px;
+  margin-top: 45px;
+  margin-left: 20px;
 }
 
 .advantages-text-apple {
-  margin-left: 115px;
-  margin-top: 40px;
+  display: block;
+  margin-left: 20px;
+  margin-top: 32px;
 }
 .advantages-text-flavors {
-  margin-left: 80px;
-  margin-top: 40px;
+  margin-left: 20px;
+  margin-top: 32px;
 }
 
 .advantages-text-numbers {
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
-  font-size: 58px;
-  line-height: 66px;
-  text-align: left;
+  font-size: 36px;
+  line-height: 41px;
   letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: #d41443;
-  padding-top: 40px;
-  padding-bottom: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .advantages-text-milk .icon::before {
   content: url(../images/milk.png);
   display: block;
-  padding: 40px 0px 40px 0px;
+  padding-bottom: 20px;
 }
 
 .advantages-text-apple .icon::before {
   content: url(../images/apples.png);
   display: block;
-  padding: 40px 0px 40px 0px;
+  padding-bottom: 20px;
 }
 
 .advantages-text-flavors .icon::before {
   content: url(../images/heart.png);
   display: block;
-  padding: 40px 0px 40px 0px;
+  padding-bottom: 20px;
 }
 
 .advantages-text-final-milk {
-  width: 288px;
-  height: 79px;
+  max-width: 288px;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 176%;
+  font-size: 12px;
+  line-height: 170%;
   letter-spacing: 0.02em;
   color: #000000;
+  padding-top: 16px;
 }
 
 .advantages-text-final-apple {
-  width: 317px;
-  height: 58px;
+  max-width: 288px;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 176%;
+  font-size: 12px;
+  line-height: 170%;
   letter-spacing: 0.02em;
   color: #000000;
+  padding-top: 16px;
 }
 
 .advantages-text-final-flavors {
-  width: 288px;
-  height: 82px;
+  max-width: 288px;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 176%;
+  font-size: 12px;
+  line-height: 170%;
   letter-spacing: 0.02em;
   color: #000000;
+  padding-top: 16px;
 }
 
 #more {
   display: none;
 }
 
-/* Stiluri prntru tableta */
-
+/* Stiluri pentru tableta */
 @media screen and (min-width: 769px) {
+  .about-heading {
+    padding-bottom: 32px;
+  }
+
+  .about-label {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .about-center {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-title {
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.04em;
+    margin-top: 16px;
+    margin-bottom: 40px;
+  }
+
+  /*
+.about-background {
+  background: url(../images/milk-background.png);
+  width: 280px;
+  height: 133px;
+  border: none;
+  position: absolute;
 }
+*/
+  .about-image {
+    width: 336px;
+    height: 335px;
+    left: 32px;
+  }
 
+  .about-image-efect {
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 500ms;
+  }
+  .about-image-efect:hover {
+    transform: rotate(180deg);
+  }
+
+  .about-text {
+    display: flex;
+    padding-left: 32px;
+    padding-right: 34px;
+  }
+
+  .about-text-top {
+    max-width: 334px;
+    font-size: 14px;
+    line-height: 174%;
+    font-size: 12px;
+    line-height: 162%;
+    padding-top: 40px;
+    padding-right: 0;
+  }
+
+  .about-text-bottom {
+    max-width: 334px;
+    font-size: 14px;
+    line-height: 194%;
+    padding-top: 18px;
+  }
+  .about-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 40px;
+  }
+
+  .about-hidden-text-button {
+    max-width: 334px;
+    font-size: 14px;
+    line-height: 194%;
+    padding-bottom: 40px;
+  }
+
+  /* Advantages */
+
+  .advantages-text-final {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .advantages-text-milk {
+    margin-left: 16px;
+    padding-top: 45px;
+  }
+
+  .advantages-text-apple {
+    margin-left: 16px;
+    padding-top: 52px;
+  }
+  .advantages-text-flavors {
+    margin-left: 16px;
+    padding-top: 52px;
+  }
+
+  .advantages-text-milk .icon::before {
+    padding-bottom: 36px;
+  }
+
+  .advantages-text-apple .icon::before {
+    padding-bottom: 36px;
+  }
+
+  .advantages-text-flavors .icon::before {
+    padding-bottom: 36px;
+  }
+
+  .advantages-text-final-milk {
+    max-width: 165px;
+    font-size: 14px;
+    line-height: 174%;
+    padding-top: 32px;
+  }
+
+  .advantages-text-final-apple {
+    max-width: 165px;
+    font-size: 14px;
+    line-height: 174%;
+    padding-top: 32px;
+  }
+
+  .advantages-text-final-flavors {
+    max-width: 165px;
+    font-size: 14px;
+    line-height: 174%;
+    padding-top: 32px;
+  }
+}
 /* Stiluri pentru desktop */
-
 @media screen and (min-width: 1200px) {
+  .about-heading {
+    padding-bottom: 60px;
+  }
+  .about-background {
+    background: url(../images/milk-background.png);
+    height: 521px;
+    border: none;
+  }
+
+  .about-label {
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0.04em;
+  }
+
+  .about-title {
+    font-size: 58px;
+    line-height: 66px;
+    letter-spacing: 0.06em;
+    margin-bottom: 0px;
+  }
+  .about-image {
+    width: 501px;
+    height: 501px;
+    left: 16px;
+  }
+
+  .about-background {
+    background: url(../images/milk-background.png);
+    height: 521px;
+    border: none;
+  }
+
+  .about-text {
+    padding-left: 99px;
+  }
+  .about-text-top {
+    max-width: 400px;
+    font-size: 16px;
+    line-height: 176%;
+    padding-top: 60px;
+  }
+
+  .about-text-bottom {
+    max-width: 401px;
+    font-size: 14px;
+    line-height: 194%;
+    padding-top: 20px;
+  }
+
+  .about-button {
+    font-size: 16px;
+    line-height: 21px;
+    position: relative;
+    top: 0px;
+  }
+  .about-hidden-text-button {
+    max-width: 400px;
+    font-size: 14px;
+    line-height: 194%;
+    padding-bottom: 25px;
+  }
+
+  .advantages-text-milk {
+    padding-bottom: 182px;
+  }
+
+  .advantages-text-apple {
+    margin-left: 115px;
+    margin-top: 40px;
+  }
+  .advantages-text-flavors {
+    margin-left: 80px;
+    margin-top: 40px;
+  }
+
+  .advantages-text-numbers {
+    font-size: 58px;
+    line-height: 66px;
+    text-align: left;
+    padding-bottom: 16px;
+  }
+
+  .advantages-text-milk .icon::before {
+    padding: 40px 0px 40px 0px;
+  }
+
+  .advantages-text-apple .icon::before {
+    padding: 40px 0px 40px 0px;
+  }
+
+  .advantages-text-flavors .icon::before {
+    padding: 40px 0px 40px 0px;
+  }
+
+  .advantages-text-final-milk {
+    max-width: 288px;
+    height: 79px;
+    font-size: 16px;
+    line-height: 176%;
+  }
+
+  .advantages-text-final-apple {
+    max-width: 317px;
+    height: 58px;
+    font-size: 16px;
+    line-height: 176%;
+  }
+
+  .advantages-text-final-flavors {
+    max-width: 288px;
+    height: 82px;
+    font-size: 16px;
+    line-height: 176%;
+  }
 }
